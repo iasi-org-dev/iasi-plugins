@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-003"
+title = "QA approval before promotion"
+type = "requirement"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# QA approval before promotion
+
+## Rule
+
+A candidate MUST pass the applicable QA Gate before it is eligible for promotion from `outputs/` to `release/`. A failed or incomplete verification MUST block promotion.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

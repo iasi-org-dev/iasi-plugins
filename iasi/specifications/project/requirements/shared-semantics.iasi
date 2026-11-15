@@ -1,0 +1,26 @@
++++
+id = "PLG-REQ-012"
+title = "Share document semantics"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Share document semantics
+
+## Requirement
+
+Prefer shared definitions of format interpretation, validation and rendering across editor integrations when technically feasible.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Specific objectives 7
+- `inputs/externals/definitions.md` · 5. Common behavior and host adapters
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

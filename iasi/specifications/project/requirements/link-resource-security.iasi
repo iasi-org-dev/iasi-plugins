@@ -1,0 +1,25 @@
++++
+id = "PLG-REQ-020"
+title = "Respect host security model"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Respect host security model
+
+## Requirement
+
+Handle internal links and external resources in accordance with the host application security model.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 6. Rendering and security
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

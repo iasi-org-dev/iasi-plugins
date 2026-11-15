@@ -1,0 +1,23 @@
++++
+id = "PLG-IDE-034"
+title = "Cross-document references"
+type = "idea"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Cross-document references
+
+## Idea
+
+Consider navigation and references between `.iasi` files in subsequent milestones.
+
+**Delivery:** Future candidate, not an approved v0.1 requirement.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Longer-term objectives

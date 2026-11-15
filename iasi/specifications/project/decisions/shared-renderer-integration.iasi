@@ -1,0 +1,23 @@
++++
+id = "PLG-DEC-040"
+title = "Shared renderer implementation"
+type = "decision"
+status = "open"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Shared renderer implementation
+
+## Open question
+
+Where should the common renderer execute, and how should hosts invoke it?
+
+**Decision:** Pending. No implementation choice is implied.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 9. Open design questions

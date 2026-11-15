@@ -1,0 +1,65 @@
++++
+id = "TASK-0002"
+type = "task"
+title = "Implement IASI support for RStudio"
+status = "pending"
+priority = "high"
+project = "iasi-plugins"
+component = "rstudio"
+version = "0.1.0"
++++
+
+# TASK-0002: Implement IASI support for RStudio
+
+## Objective
+
+Implement native integration of `.iasi` documents into RStudio, reusing existing RStudio capabilities wherever possible.
+
+The goal is to provide an editing and preview experience comparable to Markdown documents without changing the `.iasi` file extension.
+
+## Specifications
+
+Read `AGENTS.md` and automatically discover all applicable specifications under `specifications/`.
+
+Respect corporate, departmental and project specifications.
+
+IASI documents contain Markdown with TOML (`+++`) or YAML (`---`) front matter.
+
+Do not redefine the document format or duplicate functionality already provided by RStudio.
+
+## Phase 1: Technical feasibility
+
+Investigate the public RStudio APIs and extension mechanisms.
+
+Determine whether `.iasi` can be associated with RStudio's native Markdown editing capabilities, including:
+
+- Source editing.
+- Visual editing.
+- Native Markdown preview.
+- Preservation of the `.iasi` extension.
+- Preservation of TOML/YAML metadata.
+
+Investigate whether RStudio permits registering additional file types or extending its native editor behavior through supported mechanisms.
+
+Document limitations and distinguish supported APIs from undocumented workarounds.
+
+Do not modify RStudio itself.
+
+## Phase 2: Implementation
+
+Implement the simplest supported solution based on the feasibility findings.
+
+The integration should provide:
+
+1. **New IASI Document**: create and open a valid `.iasi` document.
+2. **Edit IASI Document**: use RStudio's native editor, preferably with Markdown capabilities.
+3. **Preview IASI Document**: render the document in a separate window using an RStudio-supported mechanism.
+4. **Visual editing**: enable RStudio's native Visual mode if technically supported for `.iasi`.
+
+Use RStudio Addins where appropriate.
+
+Do not develop a custom visual editor or implement Split View.
+
+If native Visual mode cannot be enabled through supported APIs, document the limitation and implement the remaining functionality.
+
+## Phase 3: Verification

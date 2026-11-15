@@ -1,0 +1,56 @@
++++
+id = "specifications.language.java.security"
+title = "Java Security Requirements"
+version = "0.1.0"
+status = "draft"
+scope = "language"
+language = "java"
+type = "security"
+applies_to = ["java-projects"]
+normative = true
+metadata_schema = "iasi.document.v1"
++++
+# Java Security Requirements
+
+## Purpose
+Define baseline secure-coding requirements for Java projects, including those that execute external tools.
+
+## Rules
+
+### JSEC-001 · Validate input at trust boundaries (MUST)
+Validate untrusted input against expected type, length, range, format and permitted values. Parsing alone is not validation.
+**Verification:** tests covering invalid, hostile and boundary inputs.
+
+### JSEC-002 · No embedded secrets (MUST)
+Do not commit credentials, access tokens, private keys or passwords in code, configuration examples or test fixtures. Supply secrets via an approved external mechanism.
+**Verification:** secret scanning in CI.
+
+### JSEC-003 · Safe command execution (MUST)
+When starting external programs, pass executable and arguments as discrete values (for example, via `ProcessBuilder`) instead of concatenating untrusted input into shell command strings. Apply allowlists to executable paths when appropriate.
+**Verification:** code review and security-focused tests.
+
+### JSEC-004 · Filesystem safety (MUST)
+Normalize and validate paths relative to an authorized working root when processing external paths. Prevent traversal, unsafe overwrites and unintended access through symbolic links as applicable to the threat model.
+**Verification:** traversal and symlink tests.
+
+### JSEC-005 · Dependencies (MUST)
+Track third-party components and their versions; evaluate known vulnerabilities before release. Document accepted risks and their treatment.
+**Verification:** dependency inventory and vulnerability scan.
+
+### JSEC-006 · Least privilege (MUST)
+Do not require administrator/root privileges for operations that can run with lesser permissions; isolate elevated actions and document the justification.
+**Verification:** permission review and negative tests.
+
+### JSEC-007 · Sensitive data and logs (MUST)
+Never disclose secrets in errors, logs or diagnostic exports. Apply data minimization to personal and confidential information.
+**Verification:** tests and review.
+
+### JSEC-008 · Safe defaults (SHOULD)
+Prefer deny-by-default permissions, explicit opt-in for destructive operations and clear confirmation for irreversible changes.
+**Verification:** acceptance tests.
+
+## References
+- Oracle Secure Coding Guidelines for Java SE
+- OWASP Cheat Sheet Series (Java Security, Input Validation, OS Command Injection)
+
+References are informative; rule IDs above define the obligations in this document.

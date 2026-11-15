@@ -1,0 +1,20 @@
++++
+id = "CORP-GOV-001"
+type = "specification"
+title = "Specification authority and hierarchy"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
++++
+
+# Specification authority and hierarchy
+
+## Rule
+
+Distinguish corporate, departmental, and project specifications by **logical scope**, independently of storage location. Authorized corporate rules take precedence over departmental rules, which take precedence over project rules. More-specific documents refine higher-level requirements but MUST NOT silently contradict them.
+
+An authorized exception must be explicitly justified and approved. A `draft` is a proposed rule and is not approved policy solely because it appears in the repository.
+
+## Verification
+
+For any detected contradiction report the document IDs, scope, status and proposed resolution; do not silently choose a winner based on filename or discovery order.

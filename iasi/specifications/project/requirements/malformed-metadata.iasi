@@ -1,0 +1,25 @@
++++
+id = "PLG-REQ-017"
+title = "Report malformed metadata"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Report malformed metadata
+
+## Requirement
+
+Malformed front matter must lead to visible errors or diagnostics instead of being silently discarded.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 6. Rendering and security
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

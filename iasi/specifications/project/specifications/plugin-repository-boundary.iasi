@@ -1,0 +1,21 @@
++++
+id = "PLG-SPC-024"
+title = "Plugin repository responsibility"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Plugin repository responsibility
+
+## Specification
+
+`iasi-plugins` groups plugins, add-ins and extensions for third-party applications, distinct from the canonical document format and system provisioning.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 1. Project boundary

@@ -1,0 +1,23 @@
++++
+id = "PLG-DEC-042"
+title = "External resource policy"
+type = "decision"
+status = "open"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# External resource policy
+
+## Open question
+
+What is the policy for local assets, remote images and document links?
+
+**Decision:** Pending. No implementation choice is implied.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 9. Open design questions

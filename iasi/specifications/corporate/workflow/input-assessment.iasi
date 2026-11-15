@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-010"
+title = "Assess external input coherence and completeness"
+type = "specification"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Assess external input coherence and completeness
+
+## Rule
+
+Before formalizing external inputs into specifications, the process SHOULD assess coherence, consistency, and completeness, recording open questions and conflicts. A deliberate bypass MUST be acknowledged and MUST NOT be represented as a completed assessment.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

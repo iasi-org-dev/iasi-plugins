@@ -1,0 +1,21 @@
++++
+id = "PLG-SPC-029"
+title = "Do not reinterpret ordinary Markdown"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Do not reinterpret ordinary Markdown
+
+## Specification
+
+Do not automatically treat ordinary `.md` files as `.iasi` documents.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 3. `.iasi` document

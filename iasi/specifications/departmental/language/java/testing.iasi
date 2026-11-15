@@ -1,0 +1,49 @@
++++
+id = "specifications.language.java.testing"
+title = "Java Testing Requirements"
+version = "0.1.0"
+status = "draft"
+scope = "language"
+language = "java"
+type = "testing"
+applies_to = ["java-projects"]
+normative = true
+metadata_schema = "iasi.document.v1"
++++
+# Java Testing Requirements
+
+## Purpose
+Define the minimum evidence expected from Java tests without imposing a specific testing framework.
+
+## Rules
+
+### JTST-001 · Automated unit tests (MUST)
+Provide repeatable automated tests for nontrivial business logic, parsers, validations and transformations.
+**Verification:** test results in CI.
+
+### JTST-002 · Boundary and failure cases (MUST)
+Test valid, invalid and boundary inputs and expected failure behavior, including cleanup of partial work where relevant.
+**Verification:** traceability between scenarios and test cases.
+
+### JTST-003 · Reproducibility (MUST)
+Tests must not depend on developer-specific paths, uncontrolled external services or execution order. Use controlled fixtures and deterministic inputs where possible.
+**Verification:** clean-environment CI runs.
+
+### JTST-004 · Integration testing (MUST when applicable)
+Test integration boundaries such as filesystem operations, process execution, configuration parsing, network calls and persistence. Use real integrations or appropriately justified test doubles according to risk.
+**Verification:** integration suite and results.
+
+### JTST-005 · Platform testing (MUST when applicable)
+Run applicable integration tests across every platform formally declared as supported, or record specific uncovered combinations as exceptions.
+**Verification:** platform-test matrix.
+
+### JTST-006 · Regression on defects (MUST)
+For each fixed reproducible defect, add a regression test unless a documented exception is approved.
+**Verification:** linked defect and test evidence.
+
+### JTST-007 · Coverage evidence (SHOULD)
+Publish test coverage as a diagnostic measure. A single coverage percentage is not sufficient proof of correctness; thresholds are set in project quality-gate configuration.
+**Verification:** coverage report.
+
+## Tooling
+JUnit and other frameworks may be selected per project; this specification does not mandate one.

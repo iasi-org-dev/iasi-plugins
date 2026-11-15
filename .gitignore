@@ -1,0 +1,137 @@
+# =============================================================================
+# IASI Plugins - Git ignore rules
+# Monorepo: VS Code extensions, RStudio add-ins and future integrations
+# =============================================================================
+
+# --- Operating systems -------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes/
+
+# --- Temporary files / editors ----------------------------------------------
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.sublime-workspace
+.idea/
+*.iml
+.history/
+
+# VS Code: ignore personal workspace state; track shared settings, tasks,
+# launch configurations and extension recommendations if useful.
+.vscode/*.code-workspace
+*.code-workspace
+.vscode-test/
+
+# --- Logs / diagnostics ------------------------------------------------------
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.tsbuildinfo
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# --- Node.js / TypeScript / VS Code extensions -------------------------------
+node_modules/
+.pnp.*
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.npm/
+.pnpm-store/
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.svelte-kit/
+
+# Generated outputs (source code and config remain tracked)
+dist/
+build/
+out/
+lib-cov/
+*.vsix
+
+# --- R / RStudio add-ins ------------------------------------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.Renviron
+.Renviron.local
+.Rprofile.local
+.Rcheck/
+*.Rcheck/
+.Rbuildignore.local
+
+# Local renv library and staging (keep renv.lock, renv/activate.R,
+# renv/settings.json and other reproducible project configuration tracked)
+renv/library/
+renv/staging/
+renv/local/
+renv/python/
+
+# Packaged R builds and documentation byproducts
+*.Rproj.user/
+*.tar.gz
+*.RDataTmp
+.Rd2pdf*
+
+# --- Python tooling (optional future plugin utilities) ----------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# --- Local secrets / machine-specific configuration -------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local.env
+*.pem
+*.key
+*.p12
+*.pfx
+
+# --- IASI-specific -----------------------------------------------------------
+# Always version the format and its documents:
+# *.iasi MUST NOT be ignored.
+# Keep specifications, examples, metadata schemas and preview fixtures tracked.
+# Ignore only generated local caches and scratch output.
+.iasi-cache/
+.iasi-tmp/
+.iasi-local/
+
+# --- Explicitly retained for reproducibility --------------------------------
+# package-lock.json, pnpm-lock.yaml, yarn.lock
+# renv.lock, DESCRIPTION, NAMESPACE, *.Rproj
+# .vscode/settings.json, .vscode/extensions.json, .vscode/tasks.json
+# *.iasi, *.md, *.toml, *.yaml, *.yml
+.Rproj.user

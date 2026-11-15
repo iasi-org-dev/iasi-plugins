@@ -1,0 +1,24 @@
++++
+id = "PLG-IDE-035"
+title = "Source and preview synchronization"
+type = "idea"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Source and preview synchronization
+
+## Idea
+
+Consider coordinated scrolling and selection in a later authoring phase.
+
+**Delivery:** Future candidate, not an approved v0.1 requirement.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 9. Open design questions
+- `inputs/externals/objectives.md` · Longer-term objectives

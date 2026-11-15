@@ -1,0 +1,23 @@
++++
+id = "PLG-IDE-033"
+title = "Mermaid and PlantUML rendering"
+type = "idea"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Mermaid and PlantUML rendering
+
+## Idea
+
+Consider Mermaid and PlantUML support as subsequent enhancements.
+
+**Delivery:** Future candidate, not an approved v0.1 requirement.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Longer-term objectives

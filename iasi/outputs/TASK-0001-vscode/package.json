@@ -1,0 +1,90 @@
+{
+  "name": "iasi-vscode",
+  "displayName": "IASI Documents",
+  "description": "Source, preview and split editing for .iasi documents",
+  "version": "0.1.1",
+  "publisher": "iasi",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onLanguage:iasi"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "iasi",
+        "aliases": [
+          "IASI"
+        ],
+        "extensions": [
+          ".iasi"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "iasi",
+        "scopeName": "source.iasi",
+        "path": "./syntaxes/iasi.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "iasi.openSource",
+        "title": "IASI: Open Source"
+      },
+      {
+        "command": "iasi.openPreview",
+        "title": "IASI: Open Preview",
+        "icon": "$(open-preview)"
+      },
+      {
+        "command": "iasi.openSplit",
+        "title": "IASI: Open Split View"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "iasi.openSource"
+        },
+        {
+          "command": "iasi.openPreview"
+        },
+        {
+          "command": "iasi.openSplit"
+        }
+      ],
+      "editor/title": [
+        {
+          "when": "resourceLangId == iasi",
+          "group": "navigation",
+          "command": "iasi.openPreview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test test/*.test.js",
+    "package": "npm run build"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  },
+  "license": "MIT"
+}

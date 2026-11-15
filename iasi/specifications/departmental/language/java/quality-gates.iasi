@@ -1,0 +1,55 @@
++++
+id = "specifications.language.java.quality-gates"
+title = "Java Quality Gates"
+version = "0.1.0"
+status = "draft"
+scope = "language"
+language = "java"
+type = "quality-gate"
+applies_to = ["java-projects"]
+normative = true
+metadata_schema = "iasi.document.v1"
++++
+# Java Quality Gates
+
+## Purpose
+Define a reusable verification contract for Java deliverables. The orchestrator and CI tooling may implement this contract independently.
+
+## Gate stages
+
+### JQG-001 · Metadata and applicability (MUST)
+Resolve applicable corporate/departmental policies and project specifications, including versions. Validate `.iasi` metadata and resolve conflicting rules explicitly.
+**Evidence:** resolved-policy inventory and validation report.
+
+### JQG-002 · Build (MUST)
+Build from a clean checkout using recorded toolchain and dependency versions. Fail the gate on compilation or packaging errors.
+**Evidence:** build logs and artifact identifiers.
+
+### JQG-003 · Static checks (MUST)
+Run the configured formatting, static-quality and security analyses. Fail on policy-defined blocking findings, not on the mere presence of informational warnings.
+**Evidence:** scanner reports, rule-set versions and dispositions.
+
+### JQG-004 · Automated tests (MUST)
+Execute required unit and applicable integration tests. Fail when mandatory tests fail or required test evidence is missing.
+**Evidence:** machine-readable test reports.
+
+### JQG-005 · Dependency and secret checks (MUST)
+Run configured dependency-vulnerability and secret scans. Evaluate findings according to defined severity and exception policy.
+**Evidence:** scan results and decisions.
+
+### JQG-006 · Traceability (MUST)
+Associate gate outcome with source revision, policy versions, tool versions, applied exceptions, reports and resulting artifacts.
+**Evidence:** gate manifest.
+
+### JQG-007 · Exceptions (MUST)
+Every exception requires identifier, affected rule, scope, rationale, approving authority, evidence and expiration/review condition. An exception must never silently bypass a gate.
+**Evidence:** approved exception record.
+
+## Outcomes
+`PASS`: all mandatory controls satisfied. `FAIL`: at least one blocking control failed. `EXCEPTION`: a blocking condition has been formally accepted under the configured exception process; acceptance criteria must be explicit. `NOT_APPLICABLE`: the control does not apply, with rationale.
+
+## Project-specific thresholds
+Severity cutoffs, complexity ceilings, coverage percentages and supported-platform matrices are **not** invented here. They are supplied by applicable corporate/departmental policy or project configuration.
+
+## Typical tools (not mandatory)
+SonarQube, Java compiler/build tools, test runners, dependency scanners and secret scanners. The contract must not be tied to a vendor.

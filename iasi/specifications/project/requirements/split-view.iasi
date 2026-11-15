@@ -1,0 +1,26 @@
++++
+id = "PLG-REQ-008"
+title = "Provide split view"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Provide split view
+
+## Requirement
+
+Provide a Split View mode with editable source and rendered preview side by side.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Specific objectives 4
+- `inputs/externals/definitions.md` · 4. Editing modes / Split View
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

@@ -1,0 +1,26 @@
++++
+id = "PLG-REQ-019"
+title = "Do not execute document scripts"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Do not execute document scripts
+
+## Requirement
+
+Preview must not execute scripts embedded in the document.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Success criteria for the first VS Code milestone
+- `inputs/externals/definitions.md` · 6. Rendering and security
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

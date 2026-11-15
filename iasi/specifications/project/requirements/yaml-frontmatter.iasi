@@ -1,0 +1,26 @@
++++
+id = "PLG-REQ-003"
+title = "Support YAML front matter"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Support YAML front matter
+
+## Requirement
+
+Accept YAML metadata enclosed by `---` delimiters at the beginning of an `.iasi` document.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Specific objectives 2
+- `inputs/externals/definitions.md` · 3. `.iasi` document
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

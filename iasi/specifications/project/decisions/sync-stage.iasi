@@ -1,0 +1,23 @@
++++
+id = "PLG-DEC-043"
+title = "Synchronization delivery stage"
+type = "decision"
+status = "open"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Synchronization delivery stage
+
+## Open question
+
+At what stage should source/preview scrolling and selection synchronization arrive?
+
+**Decision:** Pending. No implementation choice is implied.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 9. Open design questions

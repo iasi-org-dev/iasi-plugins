@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-002"
+title = "Release contains approved products"
+type = "requirement"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Release contains approved products
+
+## Rule
+
+The `release/` area MUST contain approved usable products and their necessary product files, not candidates pending verification.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

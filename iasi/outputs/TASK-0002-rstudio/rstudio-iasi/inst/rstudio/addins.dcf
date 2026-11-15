@@ -1,0 +1,9 @@
+Name: IASI: New Document
+Description: Create a new .iasi document in the RStudio source editor.
+Binding: new_iasi_document
+Interactive: false
+
+Name: IASI: Preview Current Document
+Description: Preview the active .iasi Markdown body in a browser window.
+Binding: preview_iasi_document
+Interactive: false

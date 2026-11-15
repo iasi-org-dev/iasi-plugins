@@ -1,0 +1,16 @@
++++
+id = "CORP-WF-011"
+type = "specification"
+title = "Task outputs and verification contract"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
++++
+
+# Task outputs and verification contract
+
+## Rule
+
+A task describes an objective and acceptance expectations, not a copied catalog of applicable rules. Generated deliverables first enter `outputs/<task-id>/`. Tests, static analysis, documentation and review evidence are kept alongside the candidate as appropriate.
+
+A successful task execution is not by itself a successful QA Gate or an approved release. Failed or inconclusive controls must be reported. A separate approved process moves eligible product artifacts into `release/`; this process can be manual or automatic and need not leave an internal transfer log inside `release/`.

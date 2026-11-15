@@ -1,0 +1,18 @@
++++
+id = "CORP-GOV-002"
+type = "specification"
+title = "Specification lifecycle and applicability"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
++++
+
+# Specification lifecycle and applicability
+
+## Rule
+
+Tasks must discover and evaluate **relevant** specifications by goal, product, language, context, and scope. No task is required to list every applicable ID. Applicability, approval status and unresolved conflicts must be considered separately.
+
+Proposals, ideas and pending decisions are not binding policies. An executor asked whether a specific ID was considered must provide its applicability assessment and evidence, or acknowledge omission.
+
+Corporate and departmental rule sets may be resolved from shared sources in later iterations; until authoritative resolution exists, missing sources must be declared rather than inferred or invented.

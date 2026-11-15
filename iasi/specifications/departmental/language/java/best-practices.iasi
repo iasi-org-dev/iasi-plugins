@@ -1,0 +1,53 @@
++++
+id = "specifications.language.java.best-practices"
+title = "Java Best Practices"
+version = "0.1.0"
+status = "draft"
+scope = "language"
+language = "java"
+type = "guideline"
+applies_to = ["java-projects"]
+normative = true
+metadata_schema = "iasi.document.v1"
++++
+# Java Best Practices
+
+## Purpose
+Capture design and engineering practices suitable for reusable Java components and applications.
+
+## Rules
+
+### JBP-001 · Single responsibility (SHOULD)
+Organize units around cohesive responsibilities. Avoid classes that combine orchestration, persistence, networking and presentation without a clear reason.
+**Verification:** architecture/code review.
+
+### JBP-002 · Explicit contracts (MUST)
+Define inputs, outputs, preconditions, failure modes and relevant side effects at module boundaries. Do not use undocumented implicit state as an integration contract.
+**Verification:** API and design review.
+
+### JBP-003 · Dependency direction (SHOULD)
+Depend on abstractions when it reduces coupling, especially at infrastructure boundaries. Prefer composition over inheritance unless inheritance models a genuine substitutable relationship.
+**Verification:** architecture review; dependency rules where configured.
+
+### JBP-004 · Resource handling (MUST)
+Close files, streams, network connections and other closeable resources reliably; prefer `try-with-resources` when applicable.
+**Verification:** static analysis and tests.
+
+### JBP-005 · Exceptions (MUST)
+Use meaningful exception types; preserve the cause; do not swallow exceptions silently. Define recovery, propagation or translation behavior at each boundary.
+**Verification:** static analysis and review.
+
+### JBP-006 · State and mutability (SHOULD)
+Prefer immutable value objects and explicit state transitions where practical. Avoid shared mutable global state.
+**Verification:** review and concurrency tests if relevant.
+
+### JBP-007 · Logging (MUST)
+Log actionable operational events with useful context and appropriate severity, without disclosing secrets or unnecessary personal data. Never use logging as a substitute for error handling.
+**Verification:** static analysis and review.
+
+### JBP-008 · Cross-platform behavior (MUST when applicable)
+When a project claims multiplatform support, isolate platform-specific actions behind clear interfaces and test supported platforms.
+**Verification:** platform matrix and integration tests.
+
+## Non-prescriptions
+This document does not mandate a dependency-injection framework, runtime version, logging implementation or build tool. Those are project decisions, constrained by corporate policy where present.

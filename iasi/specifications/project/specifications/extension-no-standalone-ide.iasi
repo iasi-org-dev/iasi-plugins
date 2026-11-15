@@ -1,0 +1,21 @@
++++
+id = "PLG-SPC-030"
+title = "Use existing host editors"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Use existing host editors
+
+## Specification
+
+This project must not implement a standalone IDE as part of the first milestone.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Out of scope for the initial milestone

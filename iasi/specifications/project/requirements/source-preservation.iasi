@@ -1,0 +1,26 @@
++++
+id = "PLG-REQ-015"
+title = "Preserve original source"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Preserve original source
+
+## Requirement
+
+Switching view modes and preview generation must not modify the original `.iasi` document.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Success criteria for the first VS Code milestone
+- `inputs/externals/definitions.md` · 4. Editing modes / Source
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

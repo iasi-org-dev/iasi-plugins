@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-008"
+title = "External documentation is a repository, not task input"
+type = "specification"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# External documentation is a repository, not task input
+
+## Rule
+
+`inputs/externals/` stores original material received from outside the formal IASI specification process. Its existence does not imply that all of its contents are execution inputs to a task. Formalized specifications, not the entire external document store, govern implementation.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

@@ -1,0 +1,22 @@
++++
+id = "PLG-SPC-028"
+title = "RStudio subsequent target"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# RStudio subsequent target
+
+## Specification
+
+Implement an equivalent workflow in RStudio insofar as the host integration APIs demonstrably permit it.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Initial delivery scope / RStudio
+- `inputs/externals/definitions.md` · 1. Project boundary

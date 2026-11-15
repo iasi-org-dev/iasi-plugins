@@ -1,0 +1,22 @@
++++
+id = "PLG-SPC-027"
+title = "VS Code initial target"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# VS Code initial target
+
+## Specification
+
+Implement the initial `.iasi` editing and preview experience in VS Code before the RStudio integration.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Initial delivery scope
+- `inputs/externals/definitions.md` · 1. Project boundary

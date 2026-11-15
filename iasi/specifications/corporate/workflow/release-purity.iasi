@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-005"
+title = "Release excludes promotion trace"
+type = "requirement"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Release excludes promotion trace
+
+## Rule
+
+The `release/` product MUST NOT carry execution logs, QA work artifacts, or records documenting the mechanics of promotion. Required operational or product documentation is allowed. Process evidence, when retained, stays outside `release/`.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

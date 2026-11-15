@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-004"
+title = "Promotion requires an explicit process"
+type = "requirement"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Promotion requires an explicit process
+
+## Rule
+
+Promotion from `outputs/` to `release/` MUST be performed by an explicit process. That process MAY be manual or automated. Producing a candidate does not implicitly promote it.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

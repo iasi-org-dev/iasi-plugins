@@ -1,0 +1,9 @@
+Package: rstudioiasi
+Type: Package
+Title: IASI RStudio Addins
+Version: 0.1.0
+Authors@R: person("IASI", "Project", email="iasi@example.invalid", role=c("aut","cre"))
+Description: RStudio addins for creating and previewing IASI documents.
+License: MIT
+Encoding: UTF-8
+Imports: rstudioapi

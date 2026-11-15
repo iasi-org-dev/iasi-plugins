@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-007"
+title = "Atomic specification documents"
+type = "specification"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Atomic specification documents
+
+## Rule
+
+Ideas, requirements and specifications MUST be expressed in small independently identifiable `.iasi` documents, each addressing one coherent concept. External sources and specifications have a many-to-many relationship. Source provenance SHOULD be retained in metadata or content.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

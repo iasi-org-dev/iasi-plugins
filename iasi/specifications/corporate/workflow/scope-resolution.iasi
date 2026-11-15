@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-009"
+title = "Specification applicability scopes"
+type = "specification"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Specification applicability scopes
+
+## Rule
+
+Specifications MUST distinguish `corporate`, `departmental` and `project` scope. Corporate and departmental policy may be centrally maintained and resolved without copying it into every project. Project specifications remain project-owned. Physical storage and retrieval may differ from logical applicability.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

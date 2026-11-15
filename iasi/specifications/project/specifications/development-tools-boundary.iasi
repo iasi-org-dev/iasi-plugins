@@ -1,0 +1,21 @@
++++
+id = "PLG-SPC-026"
+title = "Development tools boundary"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Development tools boundary
+
+## Specification
+
+`iasi-dev-tools` owns development automation, not editor plugin ownership.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 2. Related responsibilities

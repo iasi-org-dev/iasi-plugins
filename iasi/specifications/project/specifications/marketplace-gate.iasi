@@ -1,0 +1,21 @@
++++
+id = "PLG-SPC-031"
+title = "Marketplace publication gate"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Marketplace publication gate
+
+## Specification
+
+Do not publish to external marketplaces before quality checks and review.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Out of scope for the initial milestone

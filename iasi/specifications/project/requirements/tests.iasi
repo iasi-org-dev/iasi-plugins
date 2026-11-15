@@ -1,0 +1,25 @@
++++
+id = "PLG-REQ-021"
+title = "Provide reproducible tests"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Provide reproducible tests
+
+## Requirement
+
+Provide a minimal reproducible test suite for the first VS Code implementation.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Initial delivery scope / Visual Studio Code
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

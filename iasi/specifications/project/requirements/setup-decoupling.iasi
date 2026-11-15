@@ -1,0 +1,26 @@
++++
+id = "PLG-REQ-014"
+title = "Decouple installation"
+type = "requirement"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Decouple installation
+
+## Requirement
+
+Ensure setup/integration deployment can be owned by `iasi-setup-platform` without requiring it to own plugin code.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Specific objectives 10
+- `inputs/externals/definitions.md` · 2. Related responsibilities
+
+## Verification
+
+Verify the stated behavior through a focused acceptance test or documented inspection. Detailed test cases will be defined during design.

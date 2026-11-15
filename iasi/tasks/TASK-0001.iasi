@@ -1,0 +1,45 @@
++++
+id = "TASK-0001"
+type = "task"
+title = "Implement IASI support for Visual Studio Code"
+status = "pending"
+priority = "high"
+project = "iasi-plugins"
+component = "vscode"
+version = "0.1.0"
++++
+
+# TASK-0001: Implement IASI support for Visual Studio Code
+
+## Instructions for the implementation agent
+
+IASI `.iasi` documents use Markdown content with TOML metadata front matter delimited by `+++`. Read the metadata and Markdown separately. The project specifications also describe a YAML-front-matter variant (`---`); discover and apply the relevant requirements rather than treating this introductory explanation as a complete format definition.
+
+## Objective
+
+Implement a VS Code extension that recognizes `.iasi` documents and supports native source editing, syntax highlighting, safe Markdown preview and a live side-by-side Split View.
+
+## Scope and expectations
+
+- Implement recognition of `.iasi` documents and supported metadata variants.
+- Provide Source, Preview, and Split View experiences.
+- Keep preview updated as the user edits.
+- Protect document contents and preserve the original source.
+- Supply build instructions, automated tests, and verification evidence.
+- Do not publish to the marketplace.
+
+## Specification discovery
+
+Discover and apply applicable corporate, departmental and project specifications in the available IASI context, including requirements, design constraints and QA rules. The task deliberately does not enumerate specification identifiers.
+
+Be ready to answer: "Did you consider specification ID X?", including applicability, implementation location and evidence, or acknowledging an omission. Treat ideas and open decisions as such, not as automatically approved requirements.
+
+`inputs/externals/` is the archival source material portal and is not automatically an execution input.
+
+## Deliverable
+
+A working, testable VS Code extension candidate plus technical documentation and evidence, following the applicable corporate delivery workflow.
+
+## Completion
+
+Report implemented behavior, tests run and results, remaining limitations and unresolved decisions. Do not claim success without verification.

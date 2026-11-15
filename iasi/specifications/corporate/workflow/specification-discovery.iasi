@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-006"
+title = "Contextual specification resolution"
+type = "specification"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Contextual specification resolution
+
+## Rule
+
+Task executors MUST discover relevant corporate, departmental and project specifications using the task context rather than requiring every applicable specification ID to be listed in the task. When asked about any specification ID, the executor MUST explain applicability, implementation and evidence, or identify omission. Pending decisions and ideas are not binding requirements.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.

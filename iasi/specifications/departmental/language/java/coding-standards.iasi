@@ -1,0 +1,45 @@
++++
+id = "specifications.language.java.coding-standards"
+title = "Java Coding Standards"
+version = "0.1.0"
+status = "draft"
+scope = "language"
+language = "java"
+type = "standard"
+applies_to = ["java-projects"]
+normative = true
+metadata_schema = "iasi.document.v1"
++++
+# Java Coding Standards
+
+## Purpose
+Establish consistent source-code conventions for Java projects, independently of the project, IDE or build tool.
+
+## Rules
+
+### JCS-001 · Source encoding (MUST)
+Use UTF-8 for source files and related text resources.
+**Verification:** validate repository encoding during the build or static analysis.
+
+### JCS-002 · Names and packages (MUST)
+Use descriptive names. Classes and interfaces follow `UpperCamelCase`; methods and fields follow `lowerCamelCase`; constants follow `UPPER_SNAKE_CASE`; packages use lowercase identifiers. Avoid names that conceal purpose.
+**Verification:** static analysis where supported; review otherwise.
+
+### JCS-003 · Consistent formatting (MUST)
+Apply a single, documented formatter consistently across the repository. Formatting must not depend on individual developer preferences.
+**Verification:** formatter check in CI. **Decision pending:** select formatter and configuration for the project.
+
+### JCS-004 · Imports (SHOULD)
+Prefer explicit imports and remove unused imports; avoid unnecessary wildcard imports.
+**Verification:** formatter or static analysis.
+
+### JCS-005 · API documentation (MUST)
+Document public APIs where behavior, contracts, side effects, exceptional conditions or parameter semantics are not self-evident. Documentation must describe the contract, not repeat the implementation.
+**Verification:** review; Javadoc tooling where feasible.
+
+### JCS-006 · Minimal readable units (SHOULD)
+Keep methods and classes focused. Prefer intention-revealing code over explanatory comments about obvious operations.
+**Verification:** complexity metrics and review. No arbitrary length threshold in this version.
+
+## Exceptions
+Record deviations with a justification, approval, scope, expiration/review condition and supporting evidence. See `quality-gates.iasi`.

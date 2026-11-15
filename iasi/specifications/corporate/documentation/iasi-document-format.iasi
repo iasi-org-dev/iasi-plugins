@@ -1,0 +1,22 @@
++++
+id = "CORP-DOC-001"
+type = "specification"
+title = "IASI document representation"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
++++
+
+# IASI document representation
+
+## Rule
+
+A `.iasi` file MUST consist of one front-matter block followed by a Markdown body. It accepts **TOML** bounded by `+++` or **YAML** bounded by `---` at the very start of the document. The first delimiter selects the parser. Preserve source text without reinterpretation or loss.
+
+The core metadata model includes `id`, `type`, `title`, `status`, and `version`; `scope` is required for specifications, with values `corporate`, `departmental`, or `project`. Task metadata may use `project`, `component`, and `priority`. Existing documents with additional fields remain valid unless a later approved schema explicitly restricts them.
+
+Metadata field order is insignificant. The Markdown body must remain independent of front-matter serialization. Invalid metadata MUST be reported without silently rewriting the source.
+
+## Verification
+
+Parse TOML and YAML examples; validate front matter boundaries, required fields by document type, unknown optional fields, and preservation of Markdown content. Do not assume a single global serialization format.

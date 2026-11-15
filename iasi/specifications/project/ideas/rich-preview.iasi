@@ -1,0 +1,24 @@
++++
+id = "PLG-IDE-032"
+title = "Extensible rich preview"
+type = "idea"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Extensible rich preview
+
+## Idea
+
+Design for eventual support of diagrams and richer document constructs without requiring their delivery in v0.1.
+
+**Delivery:** Future candidate, not an approved v0.1 requirement.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Specific objectives 8
+- `inputs/externals/objectives.md` · Longer-term objectives

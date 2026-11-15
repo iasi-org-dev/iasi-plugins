@@ -1,0 +1,24 @@
++++
+id = "PLG-IDE-037"
+title = "Automated plugin deployment"
+type = "idea"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md", "inputs/externals/objectives.md"]
++++
+
+# Automated plugin deployment
+
+## Idea
+
+Consider optional installation and configuration via `iasi-setup-platform`.
+
+**Delivery:** Future candidate, not an approved v0.1 requirement.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Specific objectives 10
+- `inputs/externals/definitions.md` · 8. Delivery stages

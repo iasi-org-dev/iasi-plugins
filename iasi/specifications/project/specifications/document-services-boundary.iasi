@@ -1,0 +1,21 @@
++++
+id = "PLG-SPC-025"
+title = "Shared documentation responsibility"
+type = "specification"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/definitions.md"]
++++
+
+# Shared documentation responsibility
+
+## Specification
+
+`iasi-docs` is the logical owner of shared document-format semantics and parsing, validation and rendering capabilities; its repository structure is not fixed by this specification.
+
+## Traceability
+
+- `inputs/externals/definitions.md` · 2. Related responsibilities

@@ -1,0 +1,23 @@
++++
+id = "PLG-IDE-036"
+title = "Corporate rule and QA integration"
+type = "idea"
+status = "draft"
+version = "0.2.0"
+project = "iasi-plugins"
+scope = "project"
+origin = "external-derived"
+sources = ["inputs/externals/objectives.md"]
++++
+
+# Corporate rule and QA integration
+
+## Idea
+
+Consider later integration with corporate/departmental rules and QA Gate checks.
+
+**Delivery:** Future candidate, not an approved v0.1 requirement.
+
+## Traceability
+
+- `inputs/externals/objectives.md` · Longer-term objectives

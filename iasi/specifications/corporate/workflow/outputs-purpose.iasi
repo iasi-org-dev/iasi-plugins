@@ -1,0 +1,19 @@
++++
+id = "CORP-WF-001"
+title = "Outputs are the verification workspace"
+type = "requirement"
+status = "draft"
+version = "0.1.0"
+scope = "corporate"
+origin = "iasi-methodology-workshop"
++++
+
+# Outputs are the verification workspace
+
+## Rule
+
+All task-generated candidate deliverables MUST be placed in an `outputs/` workspace and remain there during build, testing and verification. The precise organization beneath `outputs/` is defined by the applicable workflow or task executor, not by this requirement.
+
+## Notes
+
+Draft corporate rule proposed during the IASI methodology exercise. Requires corporate approval before becoming binding.
